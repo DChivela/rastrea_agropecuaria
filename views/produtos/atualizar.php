@@ -15,5 +15,5 @@ $model->atualizar($id, [
     'unidade'     => $_POST['unidade']
 ]);
 
-header('Location: ../../public/index.php');
+header('Location: /../index.php');
 exit;

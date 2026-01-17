@@ -8,5 +8,5 @@ if (!$id) exit('ID inválido');
 $model = new Produto($pdo);
 $model->excluir($id);
 
-header('Location: ../../public/index.php');
+header('Location: /../index.php');
 exit;

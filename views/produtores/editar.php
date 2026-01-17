@@ -15,6 +15,10 @@ $usuarios = $pdo->query("SELECT id, nome_completo FROM usuarios")->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Editar Produtor</title>
+    <link rel="stylesheet" href="/../public/assets/css/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
 

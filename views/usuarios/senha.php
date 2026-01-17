@@ -7,6 +7,8 @@ if (!$id) exit('ID inválido');
 <head>
     <meta charset="UTF-8">
     <title>Alterar Senha</title>
+    <link rel="stylesheet" href="/../public/assets/css/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
