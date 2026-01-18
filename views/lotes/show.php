@@ -38,7 +38,14 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lote <?= htmlspecialchars($lote['codigo_lote']) ?></title>
+    <link rel="stylesheet" href="/../public/assets/css/form.css">
+    <link rel="stylesheet" href="/../public/assets/css/table.css">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: Arial
@@ -124,7 +131,7 @@ $eventos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             <?php endforeach; ?>
         </div>
-        <a href="/../index.php">Voltar</a>
+        <a class="btn btn-primary" href="/../index.php">Voltar</a>
     </div>
 </body>
 

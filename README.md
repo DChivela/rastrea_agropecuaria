@@ -2,4 +2,4 @@
 Rastreabilidade Agropecuária
 
 # Gerar o QR Code (PHP)
-A Biblioteca recomendada a ser usada é a **endroid/qr-code** (estável e simples).
+A Biblioteca recomendada a ser usada é a **chillerlan** (estável e simples) através do composer.
