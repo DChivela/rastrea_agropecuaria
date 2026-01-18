@@ -7,32 +7,37 @@ namespace Composer\Autoload;
 class ComposerStaticInit5726834464b54df5c26cde494ec31af2
 {
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'chillerlan\\Settings\\' => 20,
+            'chillerlan\\QRCode\\' => 18,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Component\\OptionsResolver\\' => 34,
+        ),
         'E' => 
         array (
             'Endroid\\QrCode\\' => 15,
         ),
-        'D' => 
-        array (
-            'DASPRiD\\Enum\\' => 13,
-        ),
-        'B' => 
-        array (
-            'BaconQrCode\\' => 12,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'chillerlan\\Settings\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/chillerlan/php-settings-container/src',
+        ),
+        'chillerlan\\QRCode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/chillerlan/php-qrcode/src',
+        ),
+        'Symfony\\Component\\OptionsResolver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/options-resolver',
+        ),
         'Endroid\\QrCode\\' => 
         array (
             0 => __DIR__ . '/..' . '/endroid/qr-code/src',
-        ),
-        'DASPRiD\\Enum\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dasprid/enum/src',
-        ),
-        'BaconQrCode\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/bacon/bacon-qr-code/src',
         ),
     );
 

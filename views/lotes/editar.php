@@ -5,7 +5,7 @@ require '../../app/models/Usuario.php';
 $id = (int)($_GET['id'] ?? 0);
 if (!$id) exit('ID inválido');
 
-$model = new Usuario($pdo);
+$model = new Lote($pdo);
 $usuario = $model->buscar($id);
 ?>
 <!DOCTYPE html>
@@ -15,6 +15,7 @@ $usuario = $model->buscar($id);
     <meta charset="UTF-8">
     <title>Editar Utilizador</title>
     <link rel="stylesheet" href="/../public/assets/css/table.css">
+    <link rel="stylesheet" href="/../public/assets/css/form.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

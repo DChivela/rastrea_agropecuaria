@@ -1,152 +1,183 @@
 {
     "packages": [
         {
-            "name": "bacon/bacon-qr-code",
-            "version": "v3.0.3",
-            "version_normalized": "3.0.3.0",
+            "name": "chillerlan/php-qrcode",
+            "version": "3.4.1",
+            "version_normalized": "3.4.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Bacon/BaconQrCode.git",
-                "reference": "36a1cb2b81493fa5b82e50bf8068bf84d1542563"
+                "url": "https://github.com/chillerlan/php-qrcode.git",
+                "reference": "468603b687a5fe75c1ff33857a45f1726c7b95a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/36a1cb2b81493fa5b82e50bf8068bf84d1542563",
-                "reference": "36a1cb2b81493fa5b82e50bf8068bf84d1542563",
+                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/468603b687a5fe75c1ff33857a45f1726c7b95a9",
+                "reference": "468603b687a5fe75c1ff33857a45f1726c7b95a9",
                 "shasum": ""
             },
             "require": {
-                "dasprid/enum": "^1.0.3",
-                "ext-iconv": "*",
-                "php": "^8.1"
+                "chillerlan/php-settings-container": "^1.2.2",
+                "ext-mbstring": "*",
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "phly/keep-a-changelog": "^2.12",
-                "phpunit/phpunit": "^10.5.11 || ^11.0.4",
-                "spatie/phpunit-snapshot-assertions": "^5.1.5",
-                "spatie/pixelmatch-php": "^1.2.0",
-                "squizlabs/php_codesniffer": "^3.9"
-            },
-            "suggest": {
-                "ext-imagick": "to generate QR code images"
-            },
-            "time": "2025-11-19T17:15:36+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "BaconQrCode\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Scholzen 'DASPRiD'",
-                    "email": "mail@dasprids.de",
-                    "homepage": "https://dasprids.de/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "BaconQrCode is a QR code generator for PHP.",
-            "homepage": "https://github.com/Bacon/BaconQrCode",
-            "support": {
-                "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/v3.0.3"
-            },
-            "install-path": "../bacon/bacon-qr-code"
-        },
-        {
-            "name": "dasprid/enum",
-            "version": "1.0.7",
-            "version_normalized": "1.0.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DASPRiD/Enum.git",
-                "reference": "b5874fa9ed0043116c72162ec7f4fb50e02e7cce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/b5874fa9ed0043116c72162ec7f4fb50e02e7cce",
-                "reference": "b5874fa9ed0043116c72162ec7f4fb50e02e7cce",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1 <9.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7 || ^8 || ^9 || ^10 || ^11",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "time": "2025-09-16T12:23:56+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "DASPRiD\\Enum\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Scholzen 'DASPRiD'",
-                    "email": "mail@dasprids.de",
-                    "homepage": "https://dasprids.de/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP 7.1 enum implementation",
-            "keywords": [
-                "enum",
-                "map"
-            ],
-            "support": {
-                "issues": "https://github.com/DASPRiD/Enum/issues",
-                "source": "https://github.com/DASPRiD/Enum/tree/1.0.7"
-            },
-            "install-path": "../dasprid/enum"
-        },
-        {
-            "name": "endroid/qr-code",
-            "version": "6.0.9",
-            "version_normalized": "6.0.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/endroid/qr-code.git",
-                "reference": "21e888e8597440b2205e2e5c484b6c8e556bcd1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/endroid/qr-code/zipball/21e888e8597440b2205e2e5c484b6c8e556bcd1a",
-                "reference": "21e888e8597440b2205e2e5c484b6c8e556bcd1a",
-                "shasum": ""
-            },
-            "require": {
-                "bacon/bacon-qr-code": "^3.0",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "endroid/quality": "dev-main",
-                "ext-gd": "*",
-                "khanamiryan/qrcode-detector-decoder": "^2.0.2",
+                "phan/phan": "^3.2.2",
+                "phpunit/phpunit": "^8.5",
                 "setasign/fpdf": "^1.8.2"
             },
             "suggest": {
-                "ext-gd": "Enables you to write PNG images",
-                "khanamiryan/qrcode-detector-decoder": "Enables you to use the image validator",
-                "roave/security-advisories": "Makes sure package versions with known security issues are not installed",
-                "setasign/fpdf": "Enables you to use the PDF writer"
+                "chillerlan/php-authenticator": "Yet another Google authenticator! Also creates URIs for mobile apps.",
+                "setasign/fpdf": "Required to use the QR FPDF output."
             },
-            "time": "2025-07-13T19:59:45+00:00",
+            "time": "2021-09-03T17:54:45+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "chillerlan\\QRCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kazuhiko Arase",
+                    "homepage": "https://github.com/kazuhikoarase"
+                },
+                {
+                    "name": "Smiley",
+                    "email": "smiley@chillerlan.net",
+                    "homepage": "https://github.com/codemasher"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/chillerlan/php-qrcode/graphs/contributors"
+                }
+            ],
+            "description": "A QR code generator. PHP 7.2+",
+            "homepage": "https://github.com/chillerlan/php-qrcode",
+            "keywords": [
+                "phpqrcode",
+                "qr",
+                "qr code",
+                "qrcode",
+                "qrcode-generator"
+            ],
+            "support": {
+                "issues": "https://github.com/chillerlan/php-qrcode/issues",
+                "source": "https://github.com/chillerlan/php-qrcode/tree/3.4.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate?hosted_button_id=WLYUNAT9ZTJZ4",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://ko-fi.com/codemasher",
+                    "type": "ko_fi"
+                }
+            ],
+            "install-path": "../chillerlan/php-qrcode"
+        },
+        {
+            "name": "chillerlan/php-settings-container",
+            "version": "1.2.3",
+            "version_normalized": "1.2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chillerlan/php-settings-container.git",
+                "reference": "92636df53ad1bc903521d29993de0631e07ca931"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chillerlan/php-settings-container/zipball/92636df53ad1bc903521d29993de0631e07ca931",
+                "reference": "92636df53ad1bc903521d29993de0631e07ca931",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5"
+            },
+            "time": "2023-12-12T13:50:01+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "chillerlan\\Settings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Smiley",
+                    "email": "smiley@chillerlan.net",
+                    "homepage": "https://github.com/codemasher"
+                }
+            ],
+            "description": "A container class for immutable settings objects. Not a DI container. PHP 7.2+",
+            "homepage": "https://github.com/chillerlan/php-settings-container",
+            "keywords": [
+                "PHP7",
+                "Settings",
+                "container",
+                "helper"
+            ],
+            "support": {
+                "issues": "https://github.com/chillerlan/php-settings-container/issues",
+                "source": "https://github.com/chillerlan/php-settings-container"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate?hosted_button_id=WLYUNAT9ZTJZ4",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://ko-fi.com/codemasher",
+                    "type": "ko_fi"
+                }
+            ],
+            "install-path": "../chillerlan/php-settings-container"
+        },
+        {
+            "name": "endroid/qr-code",
+            "version": "1.9.3",
+            "version_normalized": "1.9.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/qr-code.git",
+                "reference": "c9644bec2a9cc9318e98d1437de3c628dcd1ef93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/qr-code/zipball/c9644bec2a9cc9318e98d1437de3c628dcd1ef93",
+                "reference": "c9644bec2a9cc9318e98d1437de3c628dcd1ef93",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.4",
+                "symfony/options-resolver": "^2.3|^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0",
+                "sensio/framework-extra-bundle": "^3.0",
+                "symfony/browser-kit": "^2.3|^3.0",
+                "symfony/framework-bundle": "^2.3|^3.0",
+                "symfony/http-kernel": "^2.3|^3.0"
+            },
+            "time": "2017-04-08T09:13:59+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "installation-source": "dist",
@@ -162,29 +193,94 @@
             "authors": [
                 {
                     "name": "Jeroen van den Enden",
-                    "email": "info@endroid.nl"
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
                 }
             ],
             "description": "Endroid QR Code",
-            "homepage": "https://github.com/endroid/qr-code",
+            "homepage": "https://github.com/endroid/QrCode",
             "keywords": [
+                "bundle",
                 "code",
                 "endroid",
-                "php",
                 "qr",
-                "qrcode"
+                "qrcode",
+                "symfony"
             ],
             "support": {
                 "issues": "https://github.com/endroid/qr-code/issues",
-                "source": "https://github.com/endroid/qr-code/tree/6.0.9"
+                "source": "https://github.com/endroid/qr-code/tree/1.9.3"
+            },
+            "install-path": "../endroid/qr-code"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v3.4.47",
+            "version_normalized": "3.4.47.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "c7efc97a47b2ebaabc19d5b6c6b50f5c37c92744"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/c7efc97a47b2ebaabc19d5b6c6b50f5c37c92744",
+                "reference": "c7efc97a47b2ebaabc19d5b6c6b50f5c37c92744",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "time": "2020-10-24T10:57:07+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/options-resolver/tree/v3.4.47"
             },
             "funding": [
                 {
-                    "url": "https://github.com/endroid",
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
                     "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
                 }
             ],
-            "install-path": "../endroid/qr-code"
+            "install-path": "../symfony/options-resolver"
         }
     ],
     "dev": true,

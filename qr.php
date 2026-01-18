@@ -1,6 +1,9 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 use Endroid\QrCode\Builder\Builder;
 use Endroid\QrCode\Writer\PngWriter;
+
+
 
 function gerarQRCode($codigo, $path)
 {

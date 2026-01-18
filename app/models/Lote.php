@@ -1,8 +1,7 @@
 <?php
-
 class Lote
 {
-    private PDO $pdo;
+    private $pdo;
 
     public function __construct(PDO $pdo)
     {

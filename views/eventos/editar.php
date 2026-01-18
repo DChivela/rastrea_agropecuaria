@@ -13,6 +13,8 @@ $usuario = $model->buscar($id);
 <head>
     <meta charset="UTF-8">
     <title>Editar Utilizador</title>
+    <link rel="stylesheet" href="/../public/assets/css/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 

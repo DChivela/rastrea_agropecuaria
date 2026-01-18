@@ -32,6 +32,7 @@ $lotes = $model->listarPorProduto($produtoId);
             <th>Quantidade</th>
             <th>Status</th>
             <th>Produção</th>
+            <th>QR Code</th>
             <th>Ações</th>
         </tr>
         <?php foreach ($lotes as $l): ?>
@@ -40,9 +41,12 @@ $lotes = $model->listarPorProduto($produtoId);
                 <td><?= $l['quantidade'] ?></td>
                 <td><?= $l['status'] ?></td>
                 <td><?= $l['data_producao'] ?></td>
+                <td><img src="/../../public/qrcodes/<?= $produtoId ?>.png" alt="QR Code do Produto"></td>
+
                 <td>
                     <a href="../eventos/index.php?lote_id=<?= $l['id'] ?>">Eventos</a> |
                     <a href="editar.php?id=<?= $l['id'] ?>">Editar</a> |
+                    <a href="show.php?id=<?= $l['id'] ?>">Visualizar</a>
                     <a href="excluir.php?id=<?= $l['id'] ?>" onclick="return confirm('Excluir lote?')">Excluir</a>
                 </td>
             </tr>
